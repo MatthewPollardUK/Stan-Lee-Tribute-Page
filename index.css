@@ -1,6 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-color: darkblue;
     font-family: 'Patrick Hand', cursive;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 20px;
   }
   
   #main {
@@ -8,14 +17,13 @@ body {
     background-color: darkred;
     color: black;
     border: 4px solid black;
-    font-size: 22px;
     text-align: center;
   }
   
-  h1 {
+  #title {
     font-family: 'Permanent Marker', cursive;
     font-family: 'Rock Salt', cursive;
-    font-size: 48px;
+    font-size: 2em;
     color: white;
     text-shadow:
           -2px -2px 0 #000,
@@ -26,52 +34,44 @@ body {
   
   #image {
     display: block;
-    max-width: 500px;
     margin: auto;
-    vertical-align: middle;
-    width: 100%;
     border: 4px solid black;
     border-radius: 10%;
   }
-  
-  .intro {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    justify-content: center;
-  }
-  
+
   narrator {
-    display: flex;
-    flex-flow: row wrap;
+    display: block;
     background: #fffaaa;
     border: 2px solid black;
     margin: 40px 40px;
-    padding: 10px 20px;
+    padding: 20px 40px;
     text-align: left;
     width: auto;
   }
   
+  /*
   .quotes {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
   }
-  
+  */
+
   .quote {
     width: auto;
-      background: white;
+    background: white;
     border: 4px solid black;
-      border-radius: 50%;
-    padding: 60px;
+    border-radius: 50%;
+    padding: 80px;
     margin: 20px 40px 
   }
-  
+
   #end-quote {
     display: flex;
     justify-content: center;
     width: auto;
   }
-  
+
   .footer {
     display: flex wrap;
     justify-content: center;
@@ -82,9 +82,12 @@ body {
     padding: 10px 20px;
   }
 
-  @media only screen and (max-width: 1050px) {
-    .quotes, .intro {
-      display: flex;
-      flex-direction: column;
-    }
-  }
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+}
