@@ -9,81 +9,86 @@ body {
     font-family: 'Patrick Hand', cursive;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     font-size: 18px;
   }
   
-  .main {
-    margin: auto;
-    background-color: darkred;
-    color: black;
-    border: 4px solid black;
-    text-align: center;
-  }
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  background-color: darkred;
+  color: black;
+  border: 4px solid black;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Rock Salt', cursive;
+  font-size: 2rem;
+  color: white;
+  text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
   
-  .title {
-    font-family: 'Rock Salt', cursive;
-    font-size: 2rem;
-    color: white;
-    text-shadow:
-          -2px -2px 0 #000,
-          2px -2px 0 #000,
-          -2px 2px 0 #000,
-          2px 2px 0 #000;
-  }
-  
-  .image {
-    display: block;
-    margin: auto;
-    width: 90%;
-    border: 4px solid black;
-    border-radius: 10%;
-  }
+.image {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border: 4px solid black;
+  border-radius: 10%;
+}
 
-  .tribute-info {
-    width: auto;
-    max-width: 800px;
-    background: #fffaaa;
-    border: 2px solid black;
-    margin: 2rem;
-    padding: 1rem;
-    text-align: left;
-  }
+.tribute-info {
+  width: auto;
+  max-width: 800px;
+  background: #fffaaa;
+  border: 2px solid black;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: left;
+}
 
-  .quote {
-    width: auto;
-    max-width: 500px;
-    background: white;
-    border: 4px solid black;
-    border-radius: 50%;
-    padding: 3rem;
-    margin: 1rem; 
-  }
+#quotes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
-  #end-quote {
-    display: flex;
-    justify-content: center;
-    width: auto;
-  }
+.quote {
+  width: auto;
+  max-width: 500px;
+  background: white;
+  border: 4px solid black;
+  border-radius: 50%;
+  padding: 3rem;
+  margin: 1.5rem; 
+}
 
-  .footer {
-    display: flex wrap;
-    justify-content: center;
-    width: auto;
-    max-width: 500px;
-    background: #fffaaa;
-    border: 2px solid black;
-    margin: 40px 40px;
-    padding: 10px 20px;
-  }
+#end-quote {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
 
-/* ipads */
-@media only screen and (min-width: 768px) {
-
+.footer {
+  display: flex wrap;
+  justify-content: center;
+  width: auto;
+  max-width: 500px;
+  background: #fffaaa;
+  border: 2px solid black;
+  margin: 40px 40px;
+  padding: 10px 20px;
 }
 
 /* desktops or laptops */
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .main {
-    margin: 2em;
+    margin: 2rem 2rem;
   }
 }
